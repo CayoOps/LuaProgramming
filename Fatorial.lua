@@ -1,5 +1,8 @@
 -- Definindo uma função fatorial
 function fact (n)
+    if (n < 0) then
+        return nil
+    end
     if n == 0 then
         return 1
     else
@@ -9,4 +12,8 @@ end
 
 print("Digite um numero:")
 a = io.read("*number")  -- Lê um número
-print(fact(a))
+if fact(a) == nil then
+    print("FATORIAL NEGATIVO!!")
+else 
+    print("O RESULTADO E: ", fact(a))
+end
