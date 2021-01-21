@@ -15,5 +15,5 @@ a = io.read("*number")  -- Lê um número
 if fact(a) == nil then
     print("FATORIAL NEGATIVO!!")
 else 
-    print("O RESULTADO E: ", fact(a))
+    print("O RESULTADO DO SEU FATORIAL E: ", fact(a))
 end
